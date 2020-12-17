@@ -1,5 +1,6 @@
 appdirs==1.4.3
 asgiref==2.3.2
+pathlib==1.0.1
 async-timeout==2.0.1
 attrs==20.3.0
 autobahn==19.11.2
@@ -32,7 +33,6 @@ lockfile==0.12.2
 msgpack==0.6.2
 MySQL-python==1.2.5
 packaging==20.3
-pathlib==1.0.1
 pep517==0.8.2
 progress==1.5
 pubcontrol==3.0.0
