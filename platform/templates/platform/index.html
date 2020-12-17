@@ -2,9 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="{% static 'platform/platformcode.css' %}" />
+    <link rel="stylesheet" href="{% static 'platform/design.css' %}" />
     <script src="{% static 'platform/jquery-3.1.1.min.js' %}"></script>
     <script src="{% static 'platform/platformcode.js' %}"></script>
     <script src="{% static 'platform/ot.js' %}"></script>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300&display=swap" rel="stylesheet">
     <script>
       var SEND_DELAY = 100;
       var ERROR_DELAY = 5000;
@@ -223,10 +225,15 @@
     </script>
   </head>
   <body>
-    <h1>{{ document_id }}</h1>
-    <div id="input">
-      <textarea id="content"></textarea>
+
+    <div id="input" class="box">
+      <h1>{{ document_id }}</h1>
+      <textarea name="comment" id="content"></textarea>
     </div>
-    <p>Start another document by browsing to <code>{{ base_url }}/{any-string}</code> .</p>
+{#    #}
+{#    <div id="input">#}
+{#      <textarea id="content"></textarea>#}
+{#    </div>#}
+    <p><center>To open a new document go to <code>{{ base_url }}/{document-id}</code> .</center></p>
   </body>
 </html>
